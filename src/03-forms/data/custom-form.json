@@ -1,0 +1,81 @@
+[
+    {
+        "type": "text",
+        "name": "firstname",
+        "label": "First name",
+        "placeholder": "Marlon",
+        "value": "",
+        "validations": [
+            {
+                "type": "required",
+                "error": "Requerido"
+            },
+            {
+                "type": "minLength",
+                "value": 2,
+                "error": "Debe tener 2 caracteres o más"
+            }
+        ]
+    },
+    {
+        "type": "text",
+        "name": "lastname",
+        "label": "Last name",
+        "placeholder": "López",
+        "value": "",
+        "validations": [
+            {
+                "type": "required",
+                "error": "Requerido"
+            },
+            {
+                "type": "minLength",
+                "value": 2,
+                "error": "Debe tener 2 caracteres o más"
+            }
+        ]
+    },
+    {
+        "type": "email",
+        "name": "email",
+        "label": "Email",
+        "placeholder": "marlonlopez@gmail.com",
+        "value": "",
+        "validations": [
+            {
+                "type": "required",
+                "error": "Requerido"
+            },
+            {
+                "type": "email",
+                "error": "El correo electrónico ingresado no es válido"
+            }
+        ]
+    },
+    {
+        "type": "select",
+        "name": "favoriteGame",
+        "label": "Favorite game",
+        "value": "",
+        "options": [
+            {
+                "id": 1,
+                "label": "Super Smash"
+            },
+            {
+                "id": 2,
+                "label": "Metal Gear"
+            },
+            {
+                "id": 3,
+                "label": "Resident Evil"
+            }
+        ],
+        "validations": [
+            {
+                "type": "required",
+                "error": "Requerido"
+            }
+        ]
+    }
+]
